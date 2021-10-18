@@ -73,13 +73,44 @@ if (es_sel == 4) {
 if (es_sel == 5) {
     /* Esercizio 5 */
     const odd_list = [];
-    for (let index = 0; index <= 6; index++) {
-        let num_chk = prompt("inserisci un numero")
-        console.log(num_chk)
+    for (let index = 0; index < 6; index++) {
+        let num_chk = parseInt(prompt("inserisci un numero")); 1
+
         if (num_chk % 2 == 1) {
-            odd_list.push = num_chk;
+            odd_list.push(num_chk);
         }
     }
-    console.log(odd_list)
+    window.alert(`I numeri dispari sono: ${odd_list}`);
 }
 
+if (es_sel == 6) {
+    /* Esercizio 6 */
+    let max_num = parseInt(prompt("inserisci il numero di numeri di cui vuoi vedere il cubo"));
+    let num_count = 0;
+    let num_placer;
+    const num_list = [];
+    while (max_num > num_count) {
+        num_count = num_count + 1;
+        console.log(num_count)
+        num_placer = num_count * num_count * num_count;
+        num_list.push(num_placer);
+    }
+    window.alert(`Il cubo dei primi ${max_num} numeri è  il seguente : ${num_list}`);
+}
+
+if (es_sel == 7) {
+    /* Esercizio 7 */
+    const pot_list = [];
+    let max_pot = 2;
+    while (max_pot < 1000) {
+        max_pot = max_pot * 2;
+        pot_list.push(max_pot);
+    }
+    window.alert(`Le potenze di 2 fino a 1000 sono: ${pot_list}`);
+}
+
+
+if (es_sel == 8) {
+    /* Esercizio 8 */
+
+}
