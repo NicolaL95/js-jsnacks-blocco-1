@@ -112,5 +112,21 @@ if (es_sel == 7) {
 
 if (es_sel == 8) {
     /* Esercizio 8 */
+    const str_sel = prompt("inserisci un numero a quattro cifre");
+    let list_sum = 0;
+    for (let index = 0; index < str_sel.length; index++) {
+        list_sum = list_sum + parseInt(str_sel[index])
+    }
+    window.alert(`La somma di tutti i numeri di ${str_sel} è: ${list_sum}`);
+}
 
+if (es_sel == 9) {
+    /* Esercizio 9 */
+    ten_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let list_sum = 0;
+    for (let index = 0; index < ten_list.length; index++) {
+        list_sum = list_sum + ten_list[index];
+    }
+    let media_list = list_sum / ten_list.length;
+    window.alert(`La somma dei primi dieci numeri è ${list_sum} mentre la media è: ${media_list}`);
 }
